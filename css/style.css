@@ -428,7 +428,7 @@ button { border: none; background: none; cursor: pointer; }
 }
 .panel-left img {
   position: relative; z-index: 2;
-  max-height: 55vh; max-width: 100%;
+  max-height: 72vh; max-width: 100%;
   width: auto; object-fit: contain;
   animation:
     panel-img-in 0.5s var(--ease) both,
