@@ -957,13 +957,16 @@ button { border: none; background: none; cursor: pointer; }
   .mob-arr-l { left: 1.2rem; }
   .mob-arr-r { right: 1.2rem; }
 
-  /* Panel on mobile: opacity-only transition so position:fixed children
-     are not trapped inside a transform stacking context */
+  /* Panel on mobile: opacity-only transition + flex-start alignment so
+     content starts at the top of the viewport (center+overflow was hiding
+     the top of the jersey above the viewport) */
   .panel {
     transform: none !important;
     opacity: 0;
     transition: opacity 0.3s var(--ease);
+    align-items: flex-start;
     overflow-x: hidden;
+    overflow-y: auto;
   }
   .panel.open { opacity: 1; }
 
@@ -972,6 +975,8 @@ button { border: none; background: none; cursor: pointer; }
     padding: 4.5rem 1.2rem 5rem;
     gap: 1.2rem;
     min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .panel-right {
     max-height: none;
@@ -979,9 +984,20 @@ button { border: none; background: none; cursor: pointer; }
     min-width: 0;
     width: 100%;
   }
-  .panel-left { min-width: 0; }
-  .panel-left img { max-height: 34vh; }
+  .panel-left { min-width: 0; min-height: 0; }
+  .panel-left img { max-height: 30vh; }
   .pd-name { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+
+  /* Bottom gradient overlay so nav doesn't clash with content */
+  .mob-nav::before {
+    content: '';
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 90px;
+    background: linear-gradient(to top, rgba(12, 12, 20, 0.92) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: calc(var(--z-panel) + 4);
+  }
 }
 
 /* ─── Reduced motion ────────────────────────────────────────── */
