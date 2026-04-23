@@ -963,6 +963,7 @@ button { border: none; background: none; cursor: pointer; }
     transform: none !important;
     opacity: 0;
     transition: opacity 0.3s var(--ease);
+    overflow-x: hidden;
   }
   .panel.open { opacity: 1; }
 
@@ -970,12 +971,16 @@ button { border: none; background: none; cursor: pointer; }
   .panel-inner {
     padding: 4.5rem 1.2rem 5rem;
     gap: 1.2rem;
+    min-width: 0;
   }
   .panel-right {
     max-height: none;
     overflow-y: visible;
+    min-width: 0;
+    width: 100%;
   }
-  .panel-left img { max-height: 42vh; }
+  .panel-left { min-width: 0; }
+  .panel-left img { max-height: 34vh; }
   .pd-name { font-size: clamp(1.6rem, 8vw, 2.2rem); }
 }
 
