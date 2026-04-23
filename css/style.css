@@ -857,15 +857,21 @@ button { border: none; background: none; cursor: pointer; }
   align-items: center;
   gap: 0.55rem;
   padding: 0.3rem 0.6rem;
-  background: linear-gradient(135deg, #181828 0%, var(--surface) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(16, 16, 28, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 8px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 2px 10px rgba(0, 0, 0, 0.35);
   transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 .pd-legend-row:hover {
-  border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    0 2px 10px rgba(0, 0, 0, 0.35);
 }
 .pd-legend-av {
   width: 28px; height: 28px; border-radius: 50%;
@@ -1000,13 +1006,22 @@ button { border: none; background: none; cursor: pointer; }
   .panel-left img { max-height: 40vh; }
   .pd-name { font-size: clamp(1.6rem, 8vw, 2.2rem); }
 
-  /* Bottom gradient overlay so nav doesn't clash with content */
+  /* Bottom gradient + blur overlay behind nav */
   .mob-nav::before {
     content: '';
     position: fixed;
     bottom: 0; left: 0; right: 0;
-    height: 90px;
-    background: linear-gradient(to top, rgba(12, 12, 20, 0.92) 0%, transparent 100%);
+    height: 130px;
+    background: linear-gradient(
+      to top,
+      rgba(8, 8, 16, 0.97) 0%,
+      rgba(8, 8, 16, 0.75) 40%,
+      transparent 100%
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-mask-image: linear-gradient(to top, black 40%, transparent 100%);
+    mask-image: linear-gradient(to top, black 40%, transparent 100%);
     pointer-events: none;
     z-index: calc(var(--z-panel) + 4);
   }
