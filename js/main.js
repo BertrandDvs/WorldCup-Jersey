@@ -6,9 +6,9 @@ const COUNTRIES = [
     group:'E', ranking:4, odds:'14/1',
     nextMatch:{ vs:'Slovakia', date:'Jun 14', venue:'Miami' },
     players:[
-      { name:'Eden Hazard',     role:'No.10 · Winger · 126 caps' },
-      { name:'Kevin De Bruyne', role:'No.7 · Midfielder · 108 caps' },
-      { name:'Romelu Lukaku',   role:'No.9 · Striker · 110 caps' },
+      { name:'Eden Hazard',     role:'No.10 · Winger · 126 caps',     photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg/120px-Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg' },
+      { name:'Kevin De Bruyne', role:'No.7 · Midfielder · 108 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg/120px-Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg' },
+      { name:'Romelu Lukaku',   role:'No.9 · Striker · 110 caps',     photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Romelu_Lukaku_2021.jpg/120px-Romelu_Lukaku_2021.jpg' },
     ],
     facts:[
       'Belgium spent over 1,900 days ranked #1 in the FIFA World Rankings — the longest stretch in history.',
@@ -23,9 +23,9 @@ const COUNTRIES = [
     group:'F', ranking:47, odds:'500/1',
     nextMatch:{ vs:'Spain', date:'Jun 15', venue:'Los Angeles' },
     players:[
-      { name:'Keylor Navas',  role:'No.1 · Goalkeeper · 117 caps' },
-      { name:'Bryan Ruiz',    role:'No.10 · Midfielder · 88 caps' },
-      { name:'Joel Campbell', role:'No.12 · Forward · 104 caps' },
+      { name:'Keylor Navas',  role:'No.1 · Goalkeeper · 117 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Keylor_Navas_2018_%28cropped%29.jpg/120px-Keylor_Navas_2018_%28cropped%29.jpg' },
+      { name:'Bryan Ruiz',    role:'No.10 · Midfielder · 88 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bryan_Ruiz_Gonz%C3%A1lez_2018%2C_Bra-Cos_%2811%29.jpg/120px-Bryan_Ruiz_Gonz%C3%A1lez_2018%2C_Bra-Cos_%2811%29.jpg' },
+      { name:'Joel Campbell', role:'No.12 · Forward · 104 caps',   photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Joel_Campbell_-_Costa_Rica_%282015%29.jpg/120px-Joel_Campbell_-_Costa_Rica_%282015%29.jpg' },
     ],
     facts:[
       'In 2014, Costa Rica topped the "Group of Death" above Uruguay, Italy, and England.',
@@ -40,9 +40,9 @@ const COUNTRIES = [
     group:'D', ranking:2, odds:'5/1',
     nextMatch:{ vs:'Poland', date:'Jun 13', venue:'New York' },
     players:[
-      { name:'Zinédine Zidane', role:'No.10 · Midfielder · 108 caps' },
-      { name:'Thierry Henry',   role:'No.12 · Striker · 123 caps' },
-      { name:'Kylian Mbappé',  role:'No.10 · Forward · 91 caps' },
+      { name:'Zinédine Zidane', role:'No.10 · Midfielder · 108 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/120px-Zinedine_Zidane_by_Tasnim_03.jpg' },
+      { name:'Thierry Henry',   role:'No.12 · Striker · 123 caps',   photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg/120px-Thierry_Henry_%2851649035951%29_%28cropped%29.jpg' },
+      { name:'Kylian Mbappé',  role:'No.10 · Forward · 91 caps',    photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/120px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg' },
     ],
     facts:[
       'France is the only nation to win the World Cup while hosting it (1998) and in the modern era (2018).',
@@ -57,9 +57,9 @@ const COUNTRIES = [
     group:'D', ranking:2, odds:'5/1',
     nextMatch:{ vs:'Poland', date:'Jun 13', venue:'New York' },
     players:[
-      { name:'Zinédine Zidane', role:'No.10 · Midfielder · 108 caps' },
-      { name:'Thierry Henry',   role:'No.12 · Striker · 123 caps' },
-      { name:'Kylian Mbappé',  role:'No.10 · Forward · 91 caps' },
+      { name:'Zinédine Zidane', role:'No.10 · Midfielder · 108 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/120px-Zinedine_Zidane_by_Tasnim_03.jpg' },
+      { name:'Thierry Henry',   role:'No.12 · Striker · 123 caps',   photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg/120px-Thierry_Henry_%2851649035951%29_%28cropped%29.jpg' },
+      { name:'Kylian Mbappé',  role:'No.10 · Forward · 91 caps',    photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/120px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg' },
     ],
     facts:[
       'The 2018 squad averaged just 26 years old — one of the youngest World Cup-winning teams ever assembled.',
@@ -74,9 +74,9 @@ const COUNTRIES = [
     group:'A', ranking:3, odds:'6/1',
     nextMatch:{ vs:'Japan', date:'Jun 11', venue:'Dallas' },
     players:[
-      { name:'Franz Beckenbauer', role:'No.5 · Libero · 103 caps' },
-      { name:'Gerd Müller',       role:'No.13 · Striker · 62 caps' },
-      { name:'Toni Kroos',        role:'No.8 · Midfielder · 106 caps' },
+      { name:'Franz Beckenbauer', role:'No.5 · Libero · 103 caps',     photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Franz_Beckenbauer_%281975%29.jpg/120px-Franz_Beckenbauer_%281975%29.jpg' },
+      { name:'Gerd Müller',       role:'No.13 · Striker · 62 caps',    photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_M%C3%BCller_c1973_%28cropped%29.jpg/120px-Gerd_M%C3%BCller_c1973_%28cropped%29.jpg' },
+      { name:'Toni Kroos',        role:'No.8 · Midfielder · 106 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/120px-Toni_Kroos_Real_Madrid_2021.jpg' },
     ],
     facts:[
       'Germany reached the semi-finals in 13 of their 20 World Cup appearances — unmatched consistency across generations.',
@@ -91,7 +91,7 @@ const COUNTRIES = [
     group:'C', ranking:55, odds:'750/1',
     nextMatch:{ vs:'Mexico', date:'Jun 12', venue:'Houston' },
     players:[
-      { name:'Theodore Whitmore', role:'No.10 · Midfielder · 86 caps' },
+      { name:'Theodore Whitmore', role:'No.10 · Midfielder · 86 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Theodore_Whitmore_interview_2025.jpg/120px-Theodore_Whitmore_interview_2025.jpg' },
       { name:'Deon Burton',       role:'No.9 · Striker · 57 caps' },
       { name:'Robbie Earl',       role:'No.7 · Midfielder · 78 caps' },
     ],
@@ -108,9 +108,9 @@ const COUNTRIES = [
     group:'A', ranking:18, odds:'40/1',
     nextMatch:{ vs:'Germany', date:'Jun 11', venue:'Dallas' },
     players:[
-      { name:'Hidetoshi Nakata', role:'No.7 · Midfielder · 77 caps' },
-      { name:'Shinji Kagawa',    role:'No.10 · Midfielder · 97 caps' },
-      { name:'Takumi Minamino', role:'No.10 · Forward · 66 caps' },
+      { name:'Hidetoshi Nakata', role:'No.7 · Midfielder · 77 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hidetoshi_Nakata_in_Okinawa.jpg/120px-Hidetoshi_Nakata_in_Okinawa.jpg' },
+      { name:'Shinji Kagawa',    role:'No.10 · Midfielder · 97 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Shinji_Kagawa_2018_%28cropped%29.jpg/120px-Shinji_Kagawa_2018_%28cropped%29.jpg' },
+      { name:'Takumi Minamino', role:'No.10 · Forward · 66 caps',    photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Minamino_asse_asm_2425.png/120px-Minamino_asse_asm_2425.png' },
     ],
     facts:[
       'At Qatar 2022, Japan became the first team ever to beat both Germany and Spain in the same group stage.',
@@ -125,9 +125,9 @@ const COUNTRIES = [
     group:'C', ranking:15, odds:'35/1',
     nextMatch:{ vs:'Ecuador', date:'Jun 12', venue:'Houston' },
     players:[
-      { name:'Hugo Sánchez',      role:'No.9 · Striker · 58 caps' },
-      { name:'Cuauhtémoc Blanco', role:'No.10 · Midfielder · 120 caps' },
-      { name:'Javier Hernández',  role:'No.14 · Striker · 109 caps' },
+      { name:'Hugo Sánchez',      role:'No.9 · Striker · 58 caps',      photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Huguito.jpg/120px-Huguito.jpg' },
+      { name:'Cuauhtémoc Blanco', role:'No.10 · Midfielder · 120 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg/120px-Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg' },
+      { name:'Javier Hernández',  role:'No.14 · Striker · 109 caps',    photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hertha_BSC_vs._West_Ham_United_20190731_%28139%29.jpg/120px-Hertha_BSC_vs._West_Ham_United_20190731_%28139%29.jpg' },
     ],
     facts:[
       'Mexico reached the Round of 16 in 7 consecutive World Cups (1994–2018) — the "Curse of the 5th Game" haunted a generation.',
@@ -142,9 +142,9 @@ const COUNTRIES = [
     group:'D', ranking:7, odds:'11/1',
     nextMatch:{ vs:'Senegal', date:'Jun 13', venue:'Philadelphia' },
     players:[
-      { name:'Johan Cruyff',     role:'No.14 · Forward · 48 caps' },
-      { name:'Marco van Basten', role:'No.9 · Striker · 58 caps' },
-      { name:'Arjen Robben',     role:'No.11 · Winger · 96 caps' },
+      { name:'Johan Cruyff',     role:'No.14 · Forward · 48 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Johan_Cruijff_%281974%29.jpg/120px-Johan_Cruijff_%281974%29.jpg' },
+      { name:'Marco van Basten', role:'No.9 · Striker · 58 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Marco_van_Basten_%282%29_%28cropped%29.jpg/120px-Marco_van_Basten_%282%29_%28cropped%29.jpg' },
+      { name:'Arjen Robben',     role:'No.11 · Winger · 96 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Arjen_Robben_v_Shakhtar_2015_%28cropped%29.jpg/120px-Arjen_Robben_v_Shakhtar_2015_%28cropped%29.jpg' },
     ],
     facts:[
       'The Netherlands have lost three World Cup finals without ever lifting the trophy — no nation has come closer, more times.',
@@ -159,9 +159,9 @@ const COUNTRIES = [
     group:'B', ranking:58, odds:'300/1',
     nextMatch:{ vs:'Argentina', date:'Jun 12', venue:'Boston' },
     players:[
-      { name:'Sami Al-Jaber',     role:'No.9 · Striker · 163 caps' },
-      { name:'Yasser Al-Qahtani', role:'No.10 · Forward · 97 caps' },
-      { name:'Salem Al-Dawsari', role:'No.11 · Winger · 67 caps' },
+      { name:'Sami Al-Jaber',     role:'No.9 · Striker · 163 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sami09.JPG/120px-Sami09.JPG' },
+      { name:'Yasser Al-Qahtani', role:'No.10 · Forward · 97 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Yasser_Al-Qahtani_2010.jpg/120px-Yasser_Al-Qahtani_2010.jpg' },
+      { name:'Salem Al-Dawsari',  role:'No.11 · Winger · 67 caps',   photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Salem_Al-Dawsari_2018.jpg/120px-Salem_Al-Dawsari_2018.jpg' },
     ],
     facts:[
       'In 2022, Saudi Arabia shocked eventual finalists Argentina 2–1 — one of the biggest upsets in World Cup history.',
@@ -176,8 +176,8 @@ const COUNTRIES = [
     group:'G', ranking:67, odds:'500/1',
     nextMatch:{ vs:'Portugal', date:'Jun 14', venue:'Atlanta' },
     players:[
-      { name:'Benni McCarthy',     role:'No.10 · Striker · 80 caps' },
-      { name:'Aaron Mokoena',      role:'No.6 · Midfielder · 107 caps' },
+      { name:'Benni McCarthy',     role:'No.10 · Striker · 80 caps',   photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/BenniMcCarthy.jpg/120px-BenniMcCarthy.jpg' },
+      { name:'Aaron Mokoena',      role:'No.6 · Midfielder · 107 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/2/2a/Aaron_Mokoena.jpg' },
       { name:'Siphiwe Tshabalala', role:'No.8 · Winger · 71 caps' },
     ],
     facts:[
@@ -193,9 +193,9 @@ const COUNTRIES = [
     group:'H', ranking:23, odds:'66/1',
     nextMatch:{ vs:'Brazil', date:'Jun 15', venue:'Seattle' },
     players:[
-      { name:'Park Ji-sung',   role:'No.13 · Midfielder · 100 caps' },
-      { name:'Ahn Jung-hwan', role:'No.10 · Forward · 71 caps' },
-      { name:'Son Heung-min', role:'No.7 · Winger · 130 caps' },
+      { name:'Park Ji-sung',   role:'No.13 · Midfielder · 100 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Park_Ji-sung_G20_Seoul_Summit_Ambassador_%28cropped%29.jpg/120px-Park_Ji-sung_G20_Seoul_Summit_Ambassador_%28cropped%29.jpg' },
+      { name:'Ahn Jung-hwan', role:'No.10 · Forward · 71 caps',      photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ahn_Jung-hwan_in_November_2021.png/120px-Ahn_Jung-hwan_in_November_2021.png' },
+      { name:'Son Heung-min', role:'No.7 · Winger · 130 caps',       photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg/120px-BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg' },
     ],
     facts:[
       'In 2002, South Korea became the first Asian nation to reach a World Cup semi-final, beating Spain and Italy along the way.',
@@ -211,8 +211,8 @@ const COUNTRIES = [
     nextMatch:{ vs:'Morocco', date:'Jun 15', venue:'Los Angeles' },
     players:[
       { name:'Xavi Hernández',  role:'No.8 · Midfielder · 133 caps' },
-      { name:'Andrés Iniesta', role:'No.6 · Midfielder · 131 caps' },
-      { name:'David Villa',    role:'No.7 · Striker · 98 caps' },
+      { name:'Andrés Iniesta', role:'No.6 · Midfielder · 131 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Andr%C3%A9s_Iniesta_%28cropped%29.jpg/120px-Andr%C3%A9s_Iniesta_%28cropped%29.jpg' },
+      { name:'David Villa',    role:'No.7 · Striker · 98 caps',     photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Spain-Tahiti%2C_Confederations_Cup_2013_%2802%29_%28Villa_crop%29.jpg/120px-Spain-Tahiti%2C_Confederations_Cup_2013_%2802%29_%28Villa_crop%29.jpg' },
     ],
     facts:[
       'Spain won Euro 2008, the 2010 World Cup, and Euro 2012 — the only team ever to win three consecutive major titles.',
@@ -228,8 +228,8 @@ const COUNTRIES = [
     nextMatch:{ vs:'Bolivia', date:'Jun 11', venue:'Los Angeles' },
     players:[
       { name:'Landon Donovan',    role:'No.10 · Midfielder · 157 caps' },
-      { name:'Clint Dempsey',    role:'No.8 · Midfielder · 141 caps' },
-      { name:'Christian Pulisic', role:'No.10 · Winger · 78 caps' },
+      { name:'Clint Dempsey',     role:'No.8 · Midfielder · 141 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/120px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg' },
+      { name:'Christian Pulisic', role:'No.10 · Winger · 78 caps',     photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg/120px-Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg' },
     ],
     facts:[
       'Tim Howard made 16 saves against Belgium in 2014 — the most by any goalkeeper in a single World Cup match.',
@@ -244,9 +244,9 @@ const COUNTRIES = [
     group:'E', ranking:20, odds:'22/1',
     nextMatch:{ vs:'Belgium', date:'Jun 14', venue:'Miami' },
     players:[
-      { name:'Diego Forlán',   role:'No.7 · Striker · 112 caps' },
-      { name:'Luis Suárez',   role:'No.9 · Striker · 135 caps' },
-      { name:'Edinson Cavani', role:'No.21 · Striker · 136 caps' },
+      { name:'Diego Forlán',   role:'No.7 · Striker · 112 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/U10_Diego_Forl%C3%A1n_7524.jpg/120px-U10_Diego_Forl%C3%A1n_7524.jpg' },
+      { name:'Luis Suárez',    role:'No.9 · Striker · 135 caps',  photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Luis_Su%C3%A1rez_2026_%28cropped%29.jpg/120px-Luis_Su%C3%A1rez_2026_%28cropped%29.jpg' },
+      { name:'Edinson Cavani', role:'No.21 · Striker · 136 caps', photo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Edinson_Cavani_2018_%28cropped%29.jpg/120px-Edinson_Cavani_2018_%28cropped%29.jpg' },
     ],
     facts:[
       "Uruguay's 1950 win in the Maracanã in front of 200,000 fans is the \"Maracanazo\" — one of sport's greatest upsets.",
@@ -631,7 +631,11 @@ function openPanel(realIdx) {
     <div class="pd-legends">
       ${c.players.map(p => `
         <div class="pd-legend-row">
-          <span class="pd-legend-av" style="background:${c.accent}25;border-color:${c.accent}55;color:${c.accent};">${getInitials(p.name)}</span>
+          <span class="pd-legend-av" style="background:${c.accent}25;border-color:${c.accent}55;color:${c.accent};">
+            ${p.photo
+              ? `<img src="${p.photo}" alt="${p.name}" class="pd-legend-av-img" onerror="this.style.display='none'">`
+              : getInitials(p.name)}
+          </span>
           <div class="pd-legend-info">
             <span class="pd-legend-name">${p.name}</span>
             <span class="pd-legend-role">${p.role}</span>
