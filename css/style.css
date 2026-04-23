@@ -435,7 +435,8 @@ button { border: none; background: none; cursor: pointer; }
 }
 
 .panel-close {
-  position: fixed; top: 1.5rem; right: 1.75rem; z-index: 2;
+  position: fixed; top: 1.5rem; right: 1.75rem;
+  z-index: calc(var(--z-panel) + 10);
   color: var(--muted); padding: 0.5rem;
   border-radius: 50%; border: 1px solid var(--border);
   background: var(--surface);
