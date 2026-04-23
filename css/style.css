@@ -911,23 +911,23 @@ button { border: none; background: none; cursor: pointer; }
 
   /* Hide desktop-only elements */
   .wc-countdown { display: none; }
-  .kb-hint       { display: none; }
-  .nav-counter   { display: none; }
-  .profile-divider { display: none; }
+  .kb-hint      { display: none; }
 
-  /* Full-width profile bar */
-  .profile-card {
-    left: 0; right: 0; top: 0;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.65rem 1.2rem;
-    gap: 0.6rem;
+  /* Counter: moved to bottom center, grouped with jersey name / nav area */
+  .nav-counter {
+    top: auto;
+    bottom: 4.4rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
   }
-  .profile-socials { margin-left: auto; }
+  .nav-counter #nav-num { font-size: 0.95rem; }
 
-  /* Dots: stay centered but above arrows */
-  .dots { bottom: 2.6rem; }
+  /* Dots: always centered at bottom on mobile, same in carousel and panel */
+  .dots        { bottom: 2.6rem; }
+  .dots.in-panel { left: 50%; bottom: 2.6rem; transform: translateX(-50%); }
 
   /* Carousel jersey: smaller on mobile */
   .slide-img { max-height: 50vh; }
@@ -985,7 +985,7 @@ button { border: none; background: none; cursor: pointer; }
     width: 100%;
   }
   .panel-left { min-width: 0; min-height: 0; }
-  .panel-left img { max-height: 30vh; }
+  .panel-left img { max-height: 40vh; }
   .pd-name { font-size: clamp(1.6rem, 8vw, 2.2rem); }
 
   /* Bottom gradient overlay so nav doesn't clash with content */
